@@ -1,0 +1,34 @@
+
+#spring.servlet.multipart.enabled=true
+#
+## Threshold after which files are written to disk.
+#spring.servlet.multipart.file-size-threshold=2KB
+## Max file size.
+#spring.servlet.multipart.max-file-size=200MB
+## Max Request Size
+#spring.servlet.multipart.max-request-size=215MB
+server:
+  port: 3333
+spring:
+  application:
+    name: Product
+  profiles:
+    active: prod
+  datasource:
+    url: jdbc:mysql://localhost:3306/securecapita#change this to your database url
+    password: caroline_654321 #change this to your database username
+    username: root #change this to your database password
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+
+
+
+
+
+
